@@ -4,5 +4,5 @@
 项目使用了SpringCloud中的gateway网关统一处理跨域问题
 项目使用token的方式实现单点登录：
     用户登录成功则根据用户的相关信息生成token（Jwt），然后将token通过cookie返回，前端设置请求拦截器：每次发送请求前就会进行判断：cookie中是否存在token，如果有就将token存放在header中，这样后 端接收到请求之后从header中获取到token的值并查询出用户相关数据返回给前端，前端回显用户信息。
-不同服务之间的调用使用了nacos和feign来实现
+不同服务之间的调用使用了nacos和feign来实现。
 一起学习，共同进步！
